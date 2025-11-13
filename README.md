@@ -13,6 +13,7 @@ To visually and mathematically demonstrate the FedAvg algorithm, showing how a g
 ## 📁 Project Structure
 
 The project is organized into three separate directories, one for each independent application:
+
     ```bash
     ├── client_1/
     │   ├── client_1_app.py     # Client 1: Flask app with private data (y=2x+1) running on port 5001

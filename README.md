@@ -15,6 +15,7 @@ To visually and mathematically demonstrate the FedAvg algorithm, showing how a g
 The project is organized into three separate directories, one for each independent application:
 
     ```bash
+    
     ├── client_1/
     │   ├── client_1_app.py     # Client 1: Flask app with private data (y=2x+1) running on port 5001
     │   └── pyproject.toml      # Client 1 dependencies (Flask, NumPy)
@@ -24,6 +25,7 @@ The project is organized into three separate directories, one for each independe
     └── server/
         ├── server_app.py         # Server: Flask app for orchestration and aggregation running on port 5000
         └── pyproject.toml        # Server dependencies (Flask, NumPy, Requests)
+
     ```
 
 ## ⚙️ Project Architecture and Components

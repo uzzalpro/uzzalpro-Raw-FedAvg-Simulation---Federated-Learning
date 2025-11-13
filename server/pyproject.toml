@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fedavg-server"
+version = "0.1.0"
+description = "Federated Learning Server App"
+authors = ["Uzzal Pro uzzal.dna@gmail.com"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.0"
+numpy = "^1.26.0"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

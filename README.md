@@ -61,13 +61,11 @@ curl -X POST [http://127.0.0.1:5000/start](http://127.0.0.1:5000/start)
 After running the curl command, monitor Terminal 3 (Server). You will see the complete, round-by-round process log.
 
 The server log will display the FedAvg Aggregation Math, showing the calculation of the new global weights using the weighted average formula:
-$$
-W_{t+1} = \sum_{k=1}^{K} \frac{n_k}{N} W_k
+
+* $W_{t+1} = \sum_{k=1}^{K} \frac{n_k}{N} W_k
 * $W_{t+1}$ is the New Global Model.
 * $n_k$ is the data size of the Client (always 2 in this example).
 * $N$ is the total data size of all participating Clients (always 4 in this example).
 * $W_k$ is the trained model from the Client.
 
 Observe how the final global weights $w$ and $b$ converge over 5 rounds to a compromise model.
-
-$$

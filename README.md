@@ -84,7 +84,7 @@ After running the curl command, monitor Terminal 3 (Server). You will see the co
 
 The server log will display the FedAvg Aggregation Math, showing the calculation of the new global weights using the weighted average formula:
 
-* $W_{t+1} = \sum_{k=1}^{K} \frac{n_k}{N} W_k
+* $W_{t+1}$ = $\sum_{k=1}^{K} \frac{n_k}{N} W_k$
 * $W_{t+1}$ is the New Global Model.
 * $n_k$ is the data size of the Client (always 2 in this example).
 * $N$ is the total data size of all participating Clients (always 4 in this example).

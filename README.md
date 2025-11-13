@@ -1,8 +1,30 @@
 # Raw FedAvg Simulation: Distributed Linear Regression
 
-This project demonstrates the **Federated Averaging (FedAvg) algorithm** from scratch. It simulates a decentralized machine learning process by coordinating one central **Server** and two independent **Clients** to collaboratively train a simple Linear Regression model without ever sharing their raw data.
+This project demonstrates the **Federated Averaging (FedAvg) algorithm** from scratch, without external machine learning frameworks (like **PyTorch or TensorFlow**). It simulates a decentralized machine learning process by coordinating one central **Server** and two independent **Clients** to collaboratively train a simple Linear Regression model without ever sharing their raw data.
 
 The core objective is to visualize the weighted average calculation, the fundamental mathematical operation of FedAvg.
+
+This project uses **Python**, **Flask**, and **NumPy** to handle the network communication and the core mathematical aggregation process.
+
+## 🎯 Project Goal
+
+To visually and mathematically demonstrate the FedAvg algorithm, showing how a global model is trained by averaging weight updates from decentralized, locally-trained models (Clients) that hold private data.
+
+## 📁 Project Structure
+
+The project is organized into three separate directories, one for each independent application:
+    ```bash
+
+    ├── client_1/
+    │   ├── client_1_app.py     # Client 1: Flask app with private data (y=2x+1) running on port 5001
+    │   └── pyproject.toml      # Client 1 dependencies (Flask, NumPy)
+    ├── client_2/
+    │   ├── client_2_app.py     # Client 2: Flask app with private data (y=x+1) running on port 5002
+    │   └── pyproject.toml
+    └── server/
+        ├── server_app.py         # Server: Flask app for orchestration and aggregation running on port 5000
+        └── pyproject.toml        # Server dependencies (Flask, NumPy, Requests)
+    ```
 
 ## ⚙️ Project Architecture and Components
 
